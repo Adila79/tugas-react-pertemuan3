@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  background: #f7f9fc;
+  color: #182230;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.hero {
+  background: linear-gradient(120deg, #123b79 0%, #1767b1 58%, #4d9dd6 100%);
+}
+
+.book-card {
+  overflow: hidden;
+  border-radius: 1rem;
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.book-card:hover {
+  transform: translateY(-4px);
+}
+
+.book-cover {
+  min-height: 112px;
+  background: linear-gradient(135deg, #e1edff, #f2f6ff);
+}
+
+.cover-mark {
+  display: grid;
+  width: 58px;
+  height: 70px;
+  place-items: center;
+  border-radius: 5px 10px 10px 5px;
+  background: #1e5eaa;
+  color: #fff;
+  font-family: Georgia, serif;
+  font-size: 2rem;
+  box-shadow: 5px 5px 0 #c5d8f5;
+}
+
+.nav-link.active {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .book-card {
+    transition: none;
+  }
+}
